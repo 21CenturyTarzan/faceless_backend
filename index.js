@@ -36,11 +36,11 @@ console.log("New client connected");
 
 // app.use("/", require("./middleware"));
 app.use("/user", require("./routes/register")());
+app.use("/btc", require("./routes/btc")());
 // app.use("/nurse", require("./routes/basic/nurse")());
 // app.use("/patient", require("./routes/basic/patient")());
 // app.use("/rota", require("./routes/rota")());
 // app.use("/leave", require("./routes/leave")());
-
 
 server.listen(PORT, function () {
   console.log("Server is running on Port: " + PORT);
